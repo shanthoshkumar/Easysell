@@ -1,0 +1,72 @@
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+<div class="row">
+    <div class="col-sm-1">
+
+            <body>
+                    <section id="container">
+                    <!--header start-->
+                    <header class="header fixed-top clearfix">
+                    <div class="brand">
+                    
+                        <a  class="logo">
+                            <h1 style="color: white;font-family: 'Times New Roman', Times, serif">EASY SELL</h1>
+                        </a>
+                    </div>
+                    <div class="top-nav clearfix">
+                        <ul class="nav pull-right top-menu">
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                    <!-- <img alt="" src="../assetsimages/avatar1_small.jpg"> -->
+                                    <span class="username">Christopher</span>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu extended logout">
+                                    <li><a ><i class=" fa fa-suitcase"></i>Profile</a></li>
+                                    <li><a ><i class="fa fa-cog"></i> Settings</a></li>
+                                    <li><a ><i class="fa fa-key"></i> Log Out</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                               
+                            </li>
+                        </ul>
+                    </div>
+                    </header>
+                    <!--sidebar start-->
+                    <aside>
+                        <div id="sidebar" class="nav-collapse">
+                            <div class="leftside-navigation">
+                                <ul class="sidebar-menu" id="nav-accordion">
+                                    <li>
+                                        <a class="active" routerLink='/signin'>
+                                            <i class="fa fa-dashboard"></i>
+                                            <span >Login</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                            <a class="active"  routerLink='/signup'>
+                                                <i class="fa fa-dashboard" routerLink='/signup'></i>
+                                                <span>Sign UP</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                                <a class="active"  routerLink='/dashboard'>
+                                                    <i class="fa fa-dashboard"></i>
+                                                    <span>Dashboard</span>
+                                                </a>
+                                            </li>
+                                   
+                                </ul>            </div>
+                        </div>
+                    </aside>
+                    <!--sidebar end-->
+                    
+                    </section>
+                    </body>
+    </div>
+    <div class="col-sm-11">
+        <router-outlet></router-outlet>   
+    </div>
+  </div>
